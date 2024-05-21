@@ -1,6 +1,7 @@
 {
   "name": "my-site",
   "private": true,
+  "homepage": "https://www.leighton-skervin.com",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
