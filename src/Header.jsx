@@ -1,5 +1,6 @@
 import React from "react";
 import logols from '/logols.jpg'
+import {Link} from "react-router-dom";
 
 function Header (){
 
@@ -10,10 +11,10 @@ function Header (){
         </div>
         <div className="menu">
           <ul >
-            <li><a style={{fontSize:'medium'}} href="/">Home</a></li>
-            <li><a style={{fontSize:'medium'}} href="/about">About</a></li>
-            <li><a style={{fontSize:'medium'}} href="/contact">Contact</a></li>
-            <li><a style={{fontSize:'medium'}} href="/portfolio">Portfolio</a></li>
+            <li><Link style={{fontSize:'medium'}} to="/">Home</Link></li>
+            <li><Link style={{fontSize:'medium'}} to="/about">About</Link></li>
+            <li><Link style={{fontSize:'medium'}} to="/contact">Contact</Link></li>
+            <li><Link style={{fontSize:'medium'}} to="/portfolio">Portfolio</Link></li>
           </ul>
         </div>
       </div>
