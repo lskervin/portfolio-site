@@ -46,16 +46,23 @@ const tabsContent = [
   
   function Portfolio() {
     const [activeTab, setActiveTab] = useState(1);
+    const [loading, setLoading] = useState();
   
     useEffect(() => {
       document.getElementById(`tab-${activeTab}`).classList.add('show-tab');
       document.querySelector(`.tab-name-${activeTab}`).classList.add('show-header');
+      setLoading(true);
+      setLoading(false);
     }, [activeTab]);
   
     const handleTabClick = (tabId) => {
       setActiveTab(tabId);
     };
-  
+
+    const handleIframeLoad = () => {
+      setLoading(false);
+      console.log(loading);
+    };
     return (
       <main>
         <section className="challenge-name">
@@ -80,13 +87,30 @@ const tabsContent = [
                   {tab.paragraphs.map((para, index) => (
                     <p style={{color:'white'}}key={index}>{para}</p>
                   ))}
-                  <iframe
+                  {loading ? 
+                  (<div className="loading">
+                    <div class="line"></div>
+                    <div class="line d1"></div>
+                    <div class="line d2"></div>
+                    <div class="line d3"></div>
+                    <div class="line d4"></div>
+                    <div class="line d5"></div>
+                    <br/>
+                    <div class="caption" style={{display: 'flex', alignItems: 'center'}}>
+                        <p style={{margin: '0 -30rem 0 25px'}}>Loading</p>
+                        <div style={{margin:0}} class="dot">..</div>
+                        <div style={{margin:0}} class="dot">..</div>
+                        <div style={{margin:0}} class="dot">..</div>
+                    </div>
+                  </div>): 
+                  (<iframe
                     src={tab.iframe}
                     title={`Iframe ${tab.id}`}
                     width="95%"
                     height="1000px"
-                    style={{ border: 'none' }}
-                  ></iframe>
+                    style={{ border: 'none', margin: '0 auto'}}
+                    onLoad={handleIframeLoad}
+                  ></iframe>)}
                 </section>
               </section>
             </article>

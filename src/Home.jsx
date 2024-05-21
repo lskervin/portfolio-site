@@ -1,5 +1,5 @@
 import React from "react";
-
+import './home.css'
 function Home(){
 
   
@@ -10,14 +10,14 @@ function Home(){
         <div class="about__content grid" >
           <div class="about__data grid">
             <div class="about__info grid">
-              <p class="about__description">
+              <p class="about__description" style={{fontSize: '35px'}}>
               Hello! I'm a  Full Stack Web Developer with a knack for creating dynamic, responsive, and efficient web applications. With a solid foundation in both front-end and back-end technologies, I enjoy turning complex problems into user-friendly solutions.
               </p>
             </div>
           </div>
     
           <div class="about__skills">
-            <h3 class="about__skills-title">Here's a bit about the tools and technologies I specialize in:</h3>
+            <h3 class="about__skills-title">Tools and Technologies:</h3>
             <div class="about__skills-content grid">
               <div class="about__skills-img">
                 <img src="https://cdn.worldvectorlogo.com/logos/html-1.svg" alt="image HTML" class="about__skills-img"/>
@@ -139,10 +139,6 @@ function Home(){
                 <img src="https://cdn.worldvectorlogo.com/logos/postman.svg" alt="image Slack" class="about__skills-img"/>
                 <p class="about__skills-hover-text">Postman</p>
               </div>
-            </div>
-            <div>
-              <a href="/contact" class="about__button button" style={{display: 'inline-block', margin: 0}}>Contact Me</a>
-              <a href="/portfolio" class="about__button button" style={{display: 'inline-block', margin: '10px'}}>View Portfolio</a>
             </div>
           </div>
         </div>

@@ -18,15 +18,15 @@ function Contact(){
           <div class="info">
             <div class="information">
               <i class="fas fa-envelope"></i>
-              <p>lskervin23@gmail.com</p>
+              <p style={{marginLeft:'5px'}}>lskervin23@gmail.com</p>
             </div>
             <div class="information">
-              <i class="fas fa-phone"></i>
-              <p>347-484-9654</p>
+              <i class="fas fa-phone"> </i>
+              <p style={{marginLeft:'5px'}}>347-484-9654</p>
             </div>
           </div>
           <div class="social-media">
-            <p>Connect with us :</p>
+            <p>Connect:</p>
             <div class="social-icons">
               <a href="https://github.com/lskervin/">
                 <i class="fab fa-github"></i>
