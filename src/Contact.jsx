@@ -1,11 +1,12 @@
 import React from "react";
 import './contact.css'
+import ls from './assets/profile_pic.jpg'
 function Contact(){
     return (
         <div class="contact-container">
       <span class="big-circle">
       <div class="contact-img" >
-            <img src="https://media.licdn.com/dms/image/D4D35AQGmG7tGOjWBQg/profile-framedphoto-shrink_200_200/0/1691505112472?e=1716681600&v=beta&t=jWwHs_pwPGzMarQbM21OttyaNQXYvLRhqr1rqMg2WZM" width="200" alt="Profile Image"/>
+            <img src={ls} width="200" alt="Profile Image"/>
           </div>
       </span>
       <div class="form">

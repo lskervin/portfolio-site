@@ -1,5 +1,5 @@
 import React from "react";
-import logols from '/logols.jpg'
+import logols from './assets/logols.jpg'
 import {Link} from "react-router-dom";
 
 function Header (){

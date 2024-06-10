@@ -8,6 +8,7 @@ import Home from './Home.jsx'
 import About from './About.jsx'
 import Portfolio from './Portfolio.jsx'
 import Contact from './Contact.jsx'
+import ls from './assets/profile_pic.jpg'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -23,7 +24,7 @@ function App() {
             <h2 class="about__profession" style={{ marginLeft: '55px', fontSize:'smaller', paddingBottom:'10px'}}>Full Stack Web Developer.</h2>
           </div>
           <div class="profile-img" >
-            <img src="https://media.licdn.com/dms/image/D4D35AQGmG7tGOjWBQg/profile-framedphoto-shrink_200_200/0/1691505112472?e=1716681600&v=beta&t=jWwHs_pwPGzMarQbM21OttyaNQXYvLRhqr1rqMg2WZM" width="200" alt="Profile Image"/>
+            <img src={ls} width="200" alt="Profile Image"/>
           </div>
           </div>
         </div>
