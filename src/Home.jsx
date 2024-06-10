@@ -121,7 +121,7 @@ function Home(){
               </div>
     
               <div class="about__skills-img">
-                <img src="https://cdn.worldvectorlogo.com/logos/microsoft-windows-11.svg" alt="image Windows" class="about__skills-img"/>
+                <img src="https://cdn.worldvectorlogo.com/logos/microsoft-windows-22.svg" alt="image Windows" class="about__skills-img"/>
                 <p class="about__skills-hover-text">Windows</p>
               </div>
     
